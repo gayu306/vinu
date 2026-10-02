@@ -3,188 +3,318 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>For Vinu ❤️</title>
 
 <style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:#fff7f5;
-  color:#4b3032;
-  font-family:Georgia,serif;
-  overflow:hidden;
+* {
+  box-sizing: border-box;
 }
-.page{
-  min-height:100vh;
-  display:none;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:30px;
-  animation:fade .8s ease;
-}
-.page.active{display:flex}
 
-h1{
-  font-size:34px;
-  margin:10px 0 20px;
-  color:#71373d;
+body {
+  margin: 0;
+  background: #fff7f5;
+  color: #4b3032;
+  font-family: Georgia, serif;
+  overflow: hidden;
 }
-h2{
-  font-size:27px;
-  color:#71373d;
+
+.page {
+  min-height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 28px;
+  animation: fade 0.8s ease;
 }
-p{
-  font-size:18px;
-  line-height:1.7;
-  max-width:420px;
+
+.page.active {
+  display: flex;
 }
-.small{
-  font-size:14px;
-  opacity:.7;
+
+h1 {
+  font-size: 34px;
+  margin: 10px 0 20px;
+  color: #71373d;
 }
-button{
-  margin-top:25px;
-  border:0;
-  background:#71373d;
-  color:white;
-  padding:14px 28px;
-  border-radius:30px;
-  font-size:16px;
+
+h2 {
+  font-size: 28px;
+  color: #71373d;
+  margin-bottom: 18px;
 }
-.photo{
-  width:min(88vw,390px);
-  height:390px;
-  object-fit:cover;
-  border-radius:22px;
-  box-shadow:0 15px 35px #0002;
-  margin:15px 0 20px;
+
+p {
+  font-size: 18px;
+  line-height: 1.65;
+  max-width: 420px;
 }
-.heart{
-  font-size:55px;
-  animation:pulse 1.5s infinite;
+
+.small {
+  font-size: 14px;
+  opacity: 0.7;
 }
-.dots{
-  position:fixed;
-  bottom:18px;
-  font-size:12px;
-  opacity:.45;
+
+button {
+  margin-top: 20px;
+  border: none;
+  background: #71373d;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: Georgia, serif;
 }
-@keyframes fade{
-  from{opacity:0;transform:translateY(15px)}
-  to{opacity:1;transform:translateY(0)}
+
+.photo {
+  width: min(88vw, 390px);
+  height: 390px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  margin: 10px 0 15px;
 }
-@keyframes pulse{
-  50%{transform:scale(1.15)}
+
+.heart {
+  font-size: 58px;
+  animation: pulse 1.5s infinite;
+}
+
+.dots {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.45;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.15);
+  }
 }
 </style>
 </head>
 
+
 <body>
 
 <!-- PAGE 1 -->
+
 <section class="page active">
+
   <div class="heart">🤍</div>
+
   <h1>Vinu, this is for you.</h1>
+
   <p>
     You’ve officially unlocked<br>
     a tiny piece of my heart.
   </p>
-  <p class="small">Don't skip. I made this just for you. 🫶🏻</p>
-  <button onclick="next()">Tap to begin →</button>
+
+  <p class="small">
+    Don't skip. I made this just for you. 🫶🏻
+  </p>
+
+  <button onclick="nextPage()">
+    Tap to begin →
+  </button>
+
 </section>
 
+
+
 <!-- PAGE 2 -->
+
 <section class="page">
+
   <h2>Somehow… it became us.</h2>
-  <img class="photo" src="1000196611.jpg">
+
+  <img
+    class="photo"
+    src="IMG-20261003-WA0000.jpg"
+    alt="Us ❤️"
+  >
+
   <p>
     I don't even know when you went from being
     just you to becoming such a big part of my little world.
+    <br><br>
+    And now I have memories with you
+    that I never want to forget. ❤️
   </p>
-  <button onclick="next()">Keep going ❤️</button>
+
+  <button onclick="nextPage()">
+    Keep going ❤️
+  </button>
+
 </section>
 
+
+
 <!-- PAGE 3 -->
+
 <section class="page">
+
   <h2>Okay, let's be honest… 😂</h2>
-  <img class="photo" src="1000196610.jpg">
+
+  <img
+    class="photo"
+    src="IMG-20261003-WA0001.jpg"
+    alt="Our memory ❤️"
+  >
+
   <p>
     We are NOT the calm, peaceful,
     perfect couple from those cute Instagram reels. 😭
     <br><br>
-    We fight. We irritate each other.
-    We overthink. We annoy each other for absolutely no reason.
+
+    We fight.
+    We irritate each other.
+    We overthink.
+    We annoy each other for absolutely no reason.
     <br><br>
-    And somehow… we still end up laughing together. ❤️
+
+    And somehow…
+    <b>we still end up laughing together. ❤️</b>
   </p>
-  <button onclick="next()">Next →</button>
+
+  <button onclick="nextPage()">
+    Next →
+  </button>
+
 </section>
 
+
+
 <!-- PAGE 4 -->
+
 <section class="page">
+
   <h2>But then… 🥹</h2>
-  <img class="photo" src="1000196609.jpg">
+
+  <img
+    class="photo"
+    src="IMG-20261003-WA0002.jpg"
+    alt="My favourite person ❤️"
+  >
+
   <p>
     There are days when everything feels easy.
     <br><br>
+
     Just being next to you.
     Laughing at stupid things.
     Taking random pictures.
-    Doing absolutely nothing and still having a good time.
+    Doing absolutely nothing
+    and still having a good time.
     <br><br>
+
     And those little moments?
+    <br>
     <b>Those are my favourite.</b>
   </p>
-  <button onclick="next()">Next ❤️</button>
+
+  <button onclick="nextPage()">
+    Next ❤️
+  </button>
+
 </section>
 
+
+
 <!-- PAGE 5 -->
+
 <section class="page">
+
   <div class="heart">🫶🏻</div>
+
   <h2>The truth.</h2>
+
   <p>
     We've had our ups.
+    <br>
     We've definitely had our downs.
     <br><br>
+
     We've misunderstood each other,
     had silly fights,
     and had moments when things weren't easy.
     <br><br>
+
     But through every version of us…
     <br><br>
+
     <b>I still find my way back to you.</b>
   </p>
-  <button onclick="next()">Keep going</button>
+
+  <button onclick="nextPage()">
+    Keep going
+  </button>
+
 </section>
 
+
+
 <!-- PAGE 6 -->
+
 <section class="page">
+
   <h2>My favourite part.</h2>
+
   <p>
     Maybe that's what I love most about us.
     <br><br>
+
     Not that we're perfect.
     <br><br>
+
     But even after the bad days,
-    the silly fights, the misunderstandings
+    the silly fights,
+    the misunderstandings
     and all the drama…
     <br><br>
+
     I still look at you and think,
     <br><br>
+
     <b>“Yep. It's you.” ❤️</b>
   </p>
-  <button onclick="next()">Next →</button>
+
+  <button onclick="nextPage()">
+    Next →
+  </button>
+
 </section>
 
+
+
 <!-- PAGE 7 -->
+
 <section class="page">
+
   <h2>If I had to choose…</h2>
+
   <p>
     If life gave me the choice
     to go back and start everything again…
     <br><br>
+
     I'd still want the same laughs.
     <br>
     The same stupid conversations.
@@ -193,335 +323,135 @@ button{
     <br>
     The same annoying boy. 😭
     <br><br>
+
     And somehow,
     <br>
+
     <b>I'd still end up with you.</b>
     <br><br>
+
     <b>Every. Single. Time. ❤️</b>
   </p>
-  <button onclick="next()">One more…</button>
+
+  <button onclick="nextPage()">
+    One more…
+  </button>
+
 </section>
 
+
+
 <!-- PAGE 8 -->
+
 <section class="page">
+
   <h2>More us. 🤍</h2>
+
   <p>
     Vinu,
     <br><br>
+
     I don't know what the future is going to look like.
     I don't know how many more ups and downs we'll have.
     <br><br>
+
     But I know one thing…
     <br><br>
+
     I want to keep making memories with you.
     <br><br>
+
     More pictures.
+    <br>
     More laughs.
+    <br>
     More fights we'll eventually laugh about.
+    <br>
     More random adventures.
     <br><br>
+
     <b>More us.</b>
   </p>
-  <button onclick="next()">Almost there ❤️</button>
+
+  <button onclick="nextPage()">
+    Almost there ❤️
+  </button>
+
 </section>
 
+
+
 <!-- PAGE 9 -->
+
 <section class="page">
+
   <div class="heart">❤️</div>
-  <h1>Happy Boyfriend's Day, Vinu.</h1>
+
+  <h1>
+    Happy Boyfriend's Day, Vinu.
+  </h1>
+
   <p>
     Thank you for being you.
     <br><br>
+
     For making me laugh.
+    <br>
     For being a part of my life.
-    For giving me memories I'll always keep close.
+    <br>
+    For giving me memories
+    I'll always keep close.
     <br><br>
+
     And for somehow becoming
-    <b>my favourite person to annoy.</b> 😂
+    <br>
+
+    <b>my favourite person to annoy. 😂</b>
     <br><br>
+
     I love you, idiot. 🫶🏻
   </p>
-  <p class="small">— Your girl ❤️</p>
+
+  <p class="small">
+    — Your girl ❤️
+  </p>
+
 </section>
 
-<div class="dots" id="dots">1 / 9</div>
+
+
+<div class="dots" id="dots">
+  1 / 9
+</div>
+
+
 
 <script>
-let current=0;
-const pages=document.querySelectorAll(".page");
-const dots=document.getElementById("dots");
 
-function next(){
-  pages[current].classList.remove("active");
-  current++;
-  if(current>=pages.length) current=pages.length-1;
-  pages[current].classList.add("active");
-  dots.innerText=(current+1)+" / "+pages.length;
+let currentPage = 0;
+
+const pages = document.querySelectorAll(".page");
+
+const dots = document.getElementById("dots");
+
+
+function nextPage() {
+
+  pages[currentPage].classList.remove("active");
+
+  currentPage++;
+
+  if (currentPage >= pages.length) {
+    currentPage = pages.length - 1;
+  }
+
+  pages[currentPage].classList.add("active");
+
+  dots.innerText =
+    (currentPage + 1) + " / " + pages.length;
 }
+
 </script>
 
 </body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Vinu ❤️</title>
-
-<style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:#fff7f5;
-  color:#4b3032;
-  font-family:Georgia,serif;
-  overflow:hidden;
-}
-.page{
-  min-height:100vh;
-  display:none;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:30px;
-  animation:fade .8s ease;
-}
-.page.active{display:flex}
-
-h1{
-  font-size:34px;
-  margin:10px 0 20px;
-  color:#71373d;
-}
-h2{
-  font-size:27px;
-  color:#71373d;
-}
-p{
-  font-size:18px;
-  line-height:1.7;
-  max-width:420px;
-}
-.small{
-  font-size:14px;
-  opacity:.7;
-}
-button{
-  margin-top:25px;
-  border:0;
-  background:#71373d;
-  color:white;
-  padding:14px 28px;
-  border-radius:30px;
-  font-size:16px;
-}
-.photo{
-  width:min(88vw,390px);
-  height:390px;
-  object-fit:cover;
-  border-radius:22px;
-  box-shadow:0 15px 35px #0002;
-  margin:15px 0 20px;
-}
-.heart{
-  font-size:55px;
-  animation:pulse 1.5s infinite;
-}
-.dots{
-  position:fixed;
-  bottom:18px;
-  font-size:12px;
-  opacity:.45;
-}
-@keyframes fade{
-  from{opacity:0;transform:translateY(15px)}
-  to{opacity:1;transform:translateY(0)}
-}
-@keyframes pulse{
-  50%{transform:scale(1.15)}
-}
-</style>
-</head>
-
-<body>
-
-<!-- PAGE 1 -->
-<section class="page active">
-  <div class="heart">🤍</div>
-  <h1>Vinu, this is for you.</h1>
-  <p>
-    You’ve officially unlocked<br>
-    a tiny piece of my heart.
-  </p>
-  <p class="small">Don't skip. I made this just for you. 🫶🏻</p>
-  <button onclick="next()">Tap to begin →</button>
-</section>
-
-<!-- PAGE 2 -->
-<section class="page">
-  <h2>Somehow… it became us.</h2>
-  <img class="photo" src="IMG-20261003-WA0002.jpg">
-  <p>
-    I don't even know when you went from being
-    just you to becoming such a big part of my little world.
-  </p>
-  <button onclick="next()">Keep going ❤️</button>
-</section>
-
-<!-- PAGE 3 -->
-<section class="page">
-  <h2>Okay, let's be honest… 😂</h2>
-  <img class="photo"src="IMG-20261003-WA0001.jpg"
-  <p>
-    We are NOT the calm, peaceful,
-    perfect couple from those cute Instagram reels. 😭
-    <br><br>
-    We fight. We irritate each other.
-    We overthink. We annoy each other for absolutely no reason.
-    <br><br>
-    And somehow… we still end up laughing together. ❤️
-  </p>
-  <button onclick="next()">Next →</button>
-</section>
-
-<!-- PAGE 4 -->
-<section class="page">
-  <h2>But then… 🥹</h2>
-  <img class="photo" src="IMG-20261003-WA0000.jpg">
-  <p>
-    There are days when everything feels easy.
-    <br><br>
-    Just being next to you.
-    Laughing at stupid things.
-    Taking random pictures.
-    Doing absolutely nothing and still having a good time.
-    <br><br>
-    And those little moments?
-    <b>Those are my favourite.</b>
-  </p>
-  <button onclick="next()">Next ❤️</button>
-</section>
-
-<!-- PAGE 5 -->
-<section class="page">
-  <div class="heart">🫶🏻</div>
-  <h2>The truth.</h2>
-  <p>
-    We've had our ups.
-    We've definitely had our downs.
-    <br><br>
-    We've misunderstood each other,
-    had silly fights,
-    and had moments when things weren't easy.
-    <br><br>
-    But through every version of us…
-    <br><br>
-    <b>I still find my way back to you.</b>
-  </p>
-  <button onclick="next()">Keep going</button>
-</section>
-
-<!-- PAGE 6 -->
-<section class="page">
-  <h2>My favourite part.</h2>
-  <p>
-    Maybe that's what I love most about us.
-    <br><br>
-    Not that we're perfect.
-    <br><br>
-    But even after the bad days,
-    the silly fights, the misunderstandings
-    and all the drama…
-    <br><br>
-    I still look at you and think,
-    <br><br>
-    <b>“Yep. It's you.” ❤️</b>
-  </p>
-  <button onclick="next()">Next →</button>
-</section>
-
-<!-- PAGE 7 -->
-<section class="page">
-  <h2>If I had to choose…</h2>
-  <p>
-    If life gave me the choice
-    to go back and start everything again…
-    <br><br>
-    I'd still want the same laughs.
-    <br>
-    The same stupid conversations.
-    <br>
-    The same memories.
-    <br>
-    The same annoying boy. 😭
-    <br><br>
-    And somehow,
-    <br>
-    <b>I'd still end up with you.</b>
-    <br><br>
-    <b>Every. Single. Time. ❤️</b>
-  </p>
-  <button onclick="next()">One more…</button>
-</section>
-
-<!-- PAGE 8 -->
-<section class="page">
-  <h2>More us. 🤍</h2>
-  <p>
-    Vinu,
-    <br><br>
-    I don't know what the future is going to look like.
-    I don't know how many more ups and downs we'll have.
-    <br><br>
-    But I know one thing…
-    <br><br>
-    I want to keep making memories with you.
-    <br><br>
-    More pictures.
-    More laughs.
-    More fights we'll eventually laugh about.
-    More random adventures.
-    <br><br>
-    <b>More us.</b>
-  </p>
-  <button onclick="next()">Almost there ❤️</button>
-</section>
-
-<!-- PAGE 9 -->
-<section class="page">
-  <div class="heart">❤️</div>
-  <h1>Happy Boyfriend's Day, Vinu.</h1>
-  <p>
-    Thank you for being you.
-    <br><br>
-    For making me laugh.
-    For being a part of my life.
-    For giving me memories I'll always keep close.
-    <br><br>
-    And for somehow becoming
-    <b>my favourite person to annoy.</b> 😂
-    <br><br>
-    I love you, idiot. 🫶🏻
-  </p>
-  <p class="small">— Your girl ❤️</p>
-</section>
-
-<div class="dots" id="dots">1 / 9</div>
-
-<script>
-let current=0;
-const pages=document.querySelectorAll(".page");
-const dots=document.getElementById("dots");
-
-function next(){
-  pages[current].classList.remove("active");
-  current++;
-  if(current>=pages.length) current=pages.length-1;
-  pages[current].classList.add("active");
-  dots.innerText=(current+1)+" / "+pages.length;
-}
-</script>
-
-</body>
-                        </html>
+</html>
